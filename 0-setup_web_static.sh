@@ -20,7 +20,7 @@ fi;
 sudo ln -sf /data/web_static/releases/test/ /data/web_static/current
 
 #-- change ownership of /data/ folder
-sudo chown -R ubuntu:ubuntu /data/
+sudo chown -hR ubuntu:ubuntu /data/
 
 #-- update nginx configuration
 sudo chown 755 /etc/nginx/sites-available/default
