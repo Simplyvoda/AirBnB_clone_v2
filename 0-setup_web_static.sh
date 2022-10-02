@@ -13,6 +13,10 @@ sudo mkdir /data/ /data/web_static/ /data/web_static/releases/ /data/web_static/
 sudo echo -e '<h1>Welcome to my page!</h1>\n<p>currently building vodinaefem.tech</p>' > /data/web_static/releases/test/index.html
 
 #-- create symbolic link (check if exists and deletes to recreate)
+if [ -d "/data/web_static/current" ];
+then
+    sudo rm -rf /data/web_static/current;
+fi;
 sudo ln -sf /data/web_static/releases/test/ /data/web_static/current
 
 #-- change ownership of /data/ folder
