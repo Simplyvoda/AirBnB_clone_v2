@@ -10,7 +10,7 @@ sudo ufw allow 'Nginx HTTPS'
 sudo mkdir /data/ /data/web_static/ /data/web_static/releases/ /data/web_static/releases/test/ /data/web_static/shared/
 
 #-- HTML page with content
-sudo echo -e '<h1>Welcome to my page!</h1>\n<p>currently building vodinaefem.tech</p>' > /data/web_static/releases/test/index.html
+echo -e '<h1>Welcome to my page!</h1>\n<p>currently building vodinaefem.tech</p>' > /data/web_static/releases/test/index.html
 
 #-- create symbolic link (check if exists and deletes to recreate)
 if [ -d "/data/web_static/current" ];
