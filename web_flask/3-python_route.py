@@ -31,18 +31,14 @@ def c_text(text):
     return "C {}".format(text)
 
 
+@app.route("/python", strict_slashes=False)
 @app.route("/python/<text>", strict_slashes=False)
-def python_text(text):
+def python_text(text="is cool"):
     """Function that displays python and <text> variable
     displays "is cool" if text variable is empty
     """
-    if (text == NULL)
-    {
-            return "Python is cool"
-    }else {
-            text = text.replace("_", " ")
-            return "Python {}".format(text)
-    }
+    text = text.replace("_", " ")
+    return "Python {}".format(text)
 
 
 if __name__ == '__main__':
