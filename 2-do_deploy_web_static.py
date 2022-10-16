@@ -2,12 +2,12 @@
 """
 distributes archives to web servers using do_deploy
 """
-from fabric.api import *
+from fabric.api import put, run, env
 from os.path import exists
-env.hosts = ['3.236.23.23', '3.238.196.183']
-env.user = 'ubuntu'
-env.identity = '~/.ssh/school'
-env.password = None
+env.hosts=['3.236.23.23', '3.238.196.183']
+env.user='ubuntu'
+env.key_filename='~/.ssh/school'
+env.password=None
 
 
 def do_deploy(archive_path):
