@@ -9,7 +9,7 @@ Routes :
     if variable is empty
     "/number/n" - displays n is a number if n is an integer
     "/number_template/<n>" - displays HTML page if n is an integer
-    "/number_odd_or_even/<n>" - displays HTML showing if 
+    "/number_odd_or_even/<n>" - displays HTML showing if
     n is even or odd
 """
 from flask import Flask
